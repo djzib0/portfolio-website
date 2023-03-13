@@ -4,7 +4,7 @@ import Home from './components/Home'
 
 // importing components
 import Navbar from './components/Navbar'
-
+import ChallengesList from './components/ChallengesList'
 
 function App() {
 
@@ -15,6 +15,8 @@ function App() {
       <Routes>
         <Route exact path="/"
                element={<Home />} />
+        <Route path="/challenges"
+               element={<ChallengesList />} />
       </Routes>
 
     </div>

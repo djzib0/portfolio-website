@@ -1,4 +1,4 @@
-export default data = [
+const data = [
     {
         id: 1,
         title: "challenge title",
@@ -12,3 +12,5 @@ export default data = [
         solution: "this is a 2 solution"
     }
 ]
+
+export default data
