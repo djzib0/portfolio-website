@@ -2,10 +2,18 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url("./assets/images/curls-dark-bg.png");
+html {
+  min-height: 100%;
+  background: radial-gradient(transparent, black),
+              url("./assets/images/curls-dark-bg.png");
   background-size: cover 60%;
   background-attachment: fixed;
+
+}
+
+body {
+  /* background-image: url("./assets/images/curls-dark-bg.png"); */
+
   color: white;
   font-family: "Raleway", sans-serif;
 }
