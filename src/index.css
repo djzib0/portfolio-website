@@ -4,8 +4,9 @@
 
 html {
   min-height: 100%;
-  background: radial-gradient(transparent, black),
-              url("./assets/images/curls-dark-bg.png");
+  background: 
+  radial-gradient(transparent, black),
+  url("./assets/images/curls-dark-bg.png");
   background-size: cover 60%;
   background-attachment: fixed;
 

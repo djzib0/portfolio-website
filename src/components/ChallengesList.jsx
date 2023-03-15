@@ -1,15 +1,24 @@
 import React, { useState } from "react";
 import challengesData from "../data/challengesData";
 
+//importing components
+import Challenge from "./Challenge";
+
+//importing custom hooks
+import useShowDiv from "../hooks/useShowDiv";
+
 function ChallengesList() {
     const [currentChallenge, setCurrentChallenge] = useState(challengesData)
+    const {data, toggleVisible} = useShowDiv(true)
 
-    const challengesArr = currentChallenge.map(challenge => {
-        return (
-            <div key={challenge.id} className="challenge-container">
-                <h1>{challenge.title}</h1>
-            </div>
-        )
+    const challengesArr = data.map(challenge => {
+            return (
+                <Challenge key={challenge.id}
+                           obj={challenge}
+                           isVisible={challenge.isVisible}
+                           toggle={toggleVisible}
+                            />
+            )
     })
 
     return (
