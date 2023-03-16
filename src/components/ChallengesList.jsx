@@ -5,11 +5,22 @@ import challengesData from "../data/challengesData";
 import Challenge from "./Challenge";
 
 //importing custom hooks
-import useShowDiv from "../hooks/useHandleChallenge";
+import useHandleChallenge from "../hooks/useHandleChallenge";
+
+// third parties
+import {nanoid} from "nanoid"
 
 function ChallengesList() {
     const [currentChallenge, setCurrentChallenge] = useState(challengesData)
-    const {data, toggleVisible, drawChallenge} = useShowDiv(true)
+    const {data,
+         toggleVisible,
+         drawChallenge,
+         showAll,
+         optionsArr,
+         handleChange,
+         formData,
+         challengeOn
+        } = useHandleChallenge(false)
 
     const challengesArr = data.map(challenge => {
             return (
@@ -21,9 +32,25 @@ function ChallengesList() {
             )
     })
 
+    // const selectOptions = optionsArr.map(item => {
+    //     return <option value={item}>{item}</option>
+    // })
+
+    // console.log(selectOptions, "haha")
+
     return (
         <div>
             <button className="enroll-btn" onClick={drawChallenge}>Challenge me.</button>
+            <button className="enroll-btn" onClick={showAll}>Show all</button>
+            {!challengeOn && <form>
+                <select id="challengeType"
+                        value={formData.challengeType}
+                        onChange={handleChange}
+                        name="challengeType" >
+                <option value="all">All</option>
+                {optionsArr}
+                </select>
+            </form>}
             {challengesArr}
         </div>
     )
