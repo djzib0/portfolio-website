@@ -5,7 +5,7 @@
 html {
   min-height: 100%;
   background: 
-  radial-gradient(transparent, black),
+  /* radial-gradient(transparent, black), */
   url("./assets/images/curls-dark-bg.png");
   background-size: cover 60%;
   background-attachment: fixed;
@@ -13,17 +13,30 @@ html {
 }
 
 body {
-  /* background-image: url("./assets/images/curls-dark-bg.png"); */
-
   color: white;
   font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a.nav-el {
   font-size: 1.25rem;
   color: white;
   text-decoration: none;
-  margin-right: 1em;
+  /* margin-right: 1em; */
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-container {
+  /* height: 20vh; */
+  background-color: white;
+  color: black;
 }
 
 

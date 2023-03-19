@@ -2,7 +2,9 @@ import React from "react";
 
 function Home() {
     return (
-        <p>Test</p>
+        <div>
+           
+        </div>
     )
 }
 

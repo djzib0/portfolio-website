@@ -5,6 +5,7 @@ import Home from './components/Home'
 // importing components
 import Navbar from './components/Navbar'
 import ChallengesList from './components/ChallengesList'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
         <Route path="/challenges"
                element={<ChallengesList />} />
       </Routes>
-
+    <Footer />
     </div>
   )
 }
