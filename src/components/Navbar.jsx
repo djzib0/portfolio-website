@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import toggleNavbar from "../utils/toggleNavbar";
 
 
-function Navbar() {
+function Navbar(props) {
+    console.log(props)
     const [showNavbar, setShowNavbar] = useState(false)
     const [windowWidth, setWindowWidth] = useState()
 
@@ -23,6 +24,12 @@ function Navbar() {
 
         return () => window.removeEventListener("resize", getWindowWidth)
     }, [])
+
+    function scrollToElement(element) {
+        const el = document.getElementById(element)
+        console.log(console.log(document.getElementById("about-me")))
+        el.scrollIntoView({behavior: 'smooth'})
+    }
 
     
     

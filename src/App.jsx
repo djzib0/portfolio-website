@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 
@@ -8,11 +8,17 @@ import ChallengesList from './components/ChallengesList'
 import Footer from './components/Footer'
 
 function App() {
+  
+  const ref = useRef(null)
 
+  function scrollTo() {
+    console.log("taka")
+    ref.current.scrollIntoView({behavior: smooth})
+  }
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar scrollToComponent={scrollTo}/>
       <Routes>
         <Route exact path="/"
                element={<Home />} />
