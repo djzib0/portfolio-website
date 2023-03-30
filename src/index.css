@@ -21,7 +21,7 @@
 
   --container-width-lg: 75%;
   --container-width-md: 85%;
-  --container-width-sm: 922:
+  --container-width-sm: 92%;
 }
 
 html {
@@ -33,15 +33,77 @@ html {
 }
 
 body {
+  font-family: 'Raleway', sans-serif;
   background-color: black;
   color: var(--color-white);
   line-height: 1.7rem;
 }
 
+
+
+
 /* GENERAL STYLES */
 .container {
-  width: var(--container-width-lg);
+  width: var(--container-width-sm);
   margin: 0 auto;
+}
+
+section:nth-child(n) {
+  background-image: radial-gradient(transparent, rgb(0, 0, 0)), 
+  url("./assets/images/y-so-serious.png");
+}
+
+section:nth-child(2n+1) {
+  background-image: radial-gradient(transparent, rgb(229, 229, 229)), 
+  url("./assets/images/y-so-serious-white.png");
+}
+
+section, header {
+  height: 100vh;
+}
+
+/* TYPOGRAPHY */
+
+.weight-500 {
+  font-weight: 500;
+}
+
+/* MEDIA QUERIES (SMALL DEVICES) */
+
+@media screen and (max-width: 601px) {
+  .section, header {
+    height: auto;
+  }
+
+  .section {
+      margin-top: 6rem;
+
+  }
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+
+@media screen and (min-width: 601px) {
+  .container {
+      width: var(--container-width-md)
+  }
+
+  .section {
+      margin-top: 6rem;
+
+  }
+}
+
+/* MEDIA QUERIES (BIG  DEVICES) */
+
+@media screen and (min-width: 992px) {
+  .container {
+      width: var(--container-width-lg)
+  }
+
+  .section > h2 {
+      margin-bottom: 2rem;
+  }
 }
 
 

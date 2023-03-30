@@ -1,0 +1,85 @@
+header {
+    background-image: radial-gradient(transparent, rgb(0, 0, 0)), 
+    url("../assets/images/y-so-serious.png");
+}
+
+.header__container {
+    padding: 4rem;
+    font-size: 1.5rem;
+}
+
+.header__container span {
+    color: var(--color-gold)
+}
+
+.header__container h1,
+.header__container h5 {
+    margin-bottom: 1rem;
+}
+
+.header__image {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header__image img {
+    width: 150px;
+    height: 150px;
+    /* height: 50%; */
+    object-fit: cover;
+    /* margin: 0 auto; */
+    border-radius: 50%;
+    border: 5px solid var(--color-gold);
+    transition: var(--transition);
+}
+
+.header__image img:hover {
+    transform: scale(103%);
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+
+@media screen and (min-width: 601px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header__container {
+        padding: 4rem;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .header__image img {
+        width: 200px;
+        height: 200px;
+    }
+  }
+  
+  /* MEDIA QUERIES (BIG  DEVICES) */
+  
+  @media screen and (min-width: 992px) {
+    .header__container {
+        padding: 2rem;
+        line-height: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+  }
+
+
+
+
