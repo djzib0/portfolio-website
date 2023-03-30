@@ -1,5 +1,5 @@
 import React from "react";
-import {nanoid} from "nanoid "
+import {nanoid} from "nanoid"
 
 function Challenge(props) {
     const {id, title, solution, isVisible} = props.obj

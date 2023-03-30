@@ -6,25 +6,19 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import ChallengesList from './components/ChallengesList'
 import Footer from './components/Footer'
+import Nav from './components/Nav'
 
 function App() {
-  
-  const ref = useRef(null)
-
-  function scrollTo() {
-    console.log("taka")
-    ref.current.scrollIntoView({behavior: smooth})
-  }
-
   return (
     <div className="App">
-      <Navbar scrollToComponent={scrollTo}/>
-      <Routes>
+      <Navbar />
+      <Nav />
+      {/* <Routes>
         <Route exact path="/"
                element={<Home />} />
         <Route path="/challenges"
                element={<ChallengesList />} />
-      </Routes>
+      </Routes> */}
     <Footer />
     </div>
   )

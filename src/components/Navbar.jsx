@@ -41,6 +41,7 @@ function Navbar(props) {
                 <span className="hamburger-bar"></span>
             </div>
             <div className={`nav-links ${showNavbar ? "active" : ""}`}>
+                <a href='#footer'>Footer</a>
                 <Link to="/" className="nav-el">Home</Link>
                 <Link to="/challenges" className="nav-el">Challenges</Link>
             </div>

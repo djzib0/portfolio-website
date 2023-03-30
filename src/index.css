@@ -1,45 +1,47 @@
 * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --bg-img-light: url("./assets/images/y-so-serious-white.png");
+  --bg-img-dark: url("./assets/images/y-so-serious.png");
+
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gold: #fca311;
+  --color-white-variant: #e5e5e5;
+  
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 85%;
+  --container-width-sm: 922:
 }
 
 html {
-  min-height: 100%;
-  background: 
-  /* radial-gradient(transparent, black), */
-  url("./assets/images/curls-dark-bg.png");
-  background-size: cover 60%;
-  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
-  color: white;
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: black;
+  color: var(--color-white);
+  line-height: 1.7rem;
 }
 
-a.nav-el {
-  font-size: 1.25rem;
-  color: white;
-  text-decoration: none;
-  /* margin-right: 1em; */
-}
-
-.App {
-  /* display: grid; */
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.main-section {
-  background-color: gray;
-  height: 100vh;
-}
-
-.footer-container {
-  /* height: 20vh; */
-  background-color: white;
-  color: black;
+/* GENERAL STYLES */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
 }
 
 
