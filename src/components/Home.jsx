@@ -18,6 +18,7 @@ function Home() {
           <div className='header__image'>
             <img src={PORTRAIT} alt="portrait picture" />
           </div>
+          dodać boczne odnośniki do social medias
         </div>
       </header>
   )
