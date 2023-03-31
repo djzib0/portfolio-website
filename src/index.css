@@ -73,6 +73,7 @@ section, header {
 @media screen and (max-width: 601px) {
   .section, header {
     height: auto;
+    width: var(--container-width-sm);
   }
 
   .section {

@@ -3,9 +3,15 @@ header {
     url("../assets/images/y-so-serious.png");
 }
 
-.header__container {
-    padding: 4rem;
+.container.header__container {
+    padding: 1rem;
     font-size: 1.5rem;
+    margin-top: 1rem;
+    height: 100vh;
+}
+
+.header__container h1 {
+    line-height: 3rem;
 }
 
 .header__container span {
