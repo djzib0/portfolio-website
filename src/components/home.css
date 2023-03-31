@@ -4,6 +4,8 @@ header {
 }
 
 .container.header__container {
+    display: grid;
+    justify-content: center;
     padding: 1rem;
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -23,6 +25,16 @@ header {
     margin-bottom: 1rem;
 }
 
+.header__description {
+    display: grid;
+    align-items: center;
+}
+
+.header__container .btn-primary {
+    /* margin-top: 2rem; */
+    margin: 2rem auto 1rem auto;
+}
+
 .header__image {
     width: 100%;
     padding: 2rem;
@@ -34,9 +46,7 @@ header {
 .header__image img {
     width: 150px;
     height: 150px;
-    /* height: 50%; */
     object-fit: cover;
-    /* margin: 0 auto; */
     border-radius: 50%;
     border: 5px solid var(--color-gold);
     transition: var(--transition);
@@ -45,6 +55,27 @@ header {
 .header__image img:hover {
     transform: scale(103%);
 }
+
+.header__socials {
+    display: none;
+    gap: .8rem;
+    height: 10px;
+    position: absolute;
+    bottom: 20vh;
+}
+
+.header__socials a {
+    display: inline-block;
+    padding: .5rem;
+    width: 50px;
+}
+
+.header__socials a:hover {
+    transform: scale(135%) translateX(2%);
+    /* transform: translateX(10%); */
+}
+
+
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 
@@ -71,17 +102,28 @@ header {
         width: 200px;
         height: 200px;
     }
+
+    .header__socials {
+        display: flex;
+    }
   }
   
   /* MEDIA QUERIES (BIG  DEVICES) */
   
   @media screen and (min-width: 992px) {
+    .container.header__container {
+        padding: 1rem;
+        font-size: 2em;
+        margin-top: 1rem;
+        height: 100vh;
+    }
+
     .header__container {
         max-width: 992px;
         padding: 2rem;
         line-height: 2rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 60% 40%;
         gap: 2rem;
         height: auto;
         margin-bottom: 3rem;

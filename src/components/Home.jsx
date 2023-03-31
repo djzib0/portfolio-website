@@ -2,6 +2,8 @@ import React from 'react'
 import "./home.css"
 import PORTRAIT from "../assets/images/portrait.jpg"
 import { GrFacebook } from "react-icons/gr"
+import { GrLinkedin } from "react-icons/gr"
+import { GrGithub } from "react-icons/gr"
 
 function Home() {
   return (
@@ -13,15 +15,16 @@ function Home() {
             <h4>Open minded for a new 
             <span> challenges </span>and prepared for the never ending 
             <span> learning </span>journey.</h4>
+            <button className='btn btn-primary'>CONTACT ME</button>
           </div>
 
           <div className='header__image'>
             <img src={PORTRAIT} alt="portrait picture" />
           </div>
-          {/* dodać boczne odnośniki do social medias */}
-
-          <div className="container socials__container">
-            <a href='https://facebook.com' target="_blank"><GrFacebook /></a>
+          <div className="container header__socials">
+            <a href='#'><GrFacebook /></a>
+            <a href='#'><GrLinkedin /></a>
+            <a href='#'><GrGithub /></a>
           </div>
         </div>
       </header>

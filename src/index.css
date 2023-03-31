@@ -15,6 +15,7 @@
   --color-black: #000;
   --color-white: #fff;
   --color-gold: #fca311;
+  --color-gold-variant: #fcbf49;
   --color-white-variant: #e5e5e5;
   
   --transition: all 400ms ease;
@@ -39,7 +40,34 @@ body {
   line-height: 1.7rem;
 }
 
+a {
+  color: var(--color-white-variant);
+  transition: var(--transition);
+}
 
+a:hover {
+  color: var(--color-gold-variant);
+}
+
+.btn {
+  width: 150px;
+  height: 60px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: var(--color-gold);
+  background-color: transparent;
+  border: 1px solid var(--color-gold);
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: var(--color-gold);
+}
 
 
 /* GENERAL STYLES */
@@ -74,6 +102,7 @@ section, header {
   .section, header {
     height: auto;
     width: var(--container-width-sm);
+    margin: 0 auto;
   }
 
   .section {
