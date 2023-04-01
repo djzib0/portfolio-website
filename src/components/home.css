@@ -9,6 +9,7 @@ header {
     padding: 1rem;
     font-size: 1.5rem;
     margin-top: 1rem;
+    /* margin-left: 5rem; */
     height: 100vh;
 }
 
@@ -58,10 +59,14 @@ header {
 
 .header__socials {
     display: none;
+    flex-direction: column;
+    justify-content: center;
     gap: .8rem;
     height: 10px;
     position: absolute;
-    bottom: 20vh;
+    left: 2vw;
+    top: 50vh;
+    /* left: translate(-50%); */
 }
 
 .header__socials a {
@@ -72,7 +77,6 @@ header {
 
 .header__socials a:hover {
     transform: scale(135%) translateX(2%);
-    /* transform: translateX(10%); */
 }
 
 

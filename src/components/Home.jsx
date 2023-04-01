@@ -21,7 +21,7 @@ function Home() {
           <div className='header__image'>
             <img src={PORTRAIT} alt="portrait picture" />
           </div>
-          <div className="container header__socials">
+          <div className="header__socials">
             <a href='#'><GrFacebook /></a>
             <a href='#'><GrLinkedin /></a>
             <a href='#'><GrGithub /></a>
