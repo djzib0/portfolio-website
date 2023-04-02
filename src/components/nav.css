@@ -28,6 +28,10 @@
     border: 1px solid transparent;
 }
 
+.navbar__container a:active {
+    color: var(--color-white)
+}
+
 a.test-active {
     background-color: var(--color-gold);
     border: .5px solid var(--color-black);
