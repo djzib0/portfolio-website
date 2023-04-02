@@ -15,7 +15,7 @@ function Home() {
             <h4>Open minded for a new 
             <span> challenges </span>and prepared for the never ending 
             <span> learning </span>journey.</h4>
-            <button className='btn btn-primary'>CONTACT ME</button>
+            <a className='btn btn-primary' href="#contact">CONTACT ME</a>
           </div>
 
           <div className='header__image'>

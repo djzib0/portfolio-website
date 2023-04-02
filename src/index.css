@@ -15,7 +15,7 @@
   --color-black: #000;
   --color-white: #fff;
   --color-gold: #fca311;
-  --color-gold-variant: #fcbf49;
+  --color-gold-variant: #ffc655;
   --color-white-variant: #e5e5e5;
   
   --transition: all 400ms ease;
@@ -58,6 +58,9 @@ a:hover {
 }
 
 .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-gold);
   background-color: transparent;
   border: 1px solid var(--color-gold);

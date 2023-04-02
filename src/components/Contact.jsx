@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <section>Contact</section>
+    <section id="contact">Contact</section>
   )
 }
 

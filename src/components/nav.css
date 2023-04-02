@@ -1,0 +1,35 @@
+.navbar__container {
+    position: fixed;
+    width: max-content;  
+    left: 50vw;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23rem;
+    border: 1px solid rgb(137, 137, 137);
+    padding: .5rem;
+    background-color: rgba(116, 116, 116, 0.5);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.navbar__container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem;
+    margin: .3rem .5rem;
+    background-color: var(--color-black);
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+a.test-active {
+    background-color: var(--color-gold);
+    border: .5px solid var(--color-black);
+    color: var(--color-black)
+}
