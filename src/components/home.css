@@ -4,7 +4,7 @@ header {
 }
 
 .container.header__container {
-    display: grid;
+    /* display: grid; */
     justify-content: center;
     padding: .5rem;
     font-size: 1.5rem;
@@ -17,8 +17,12 @@ header {
     line-height: 3rem;
 }
 
-.header__container span {
+span {
     color: var(--color-gold)
+}
+
+span.border {
+    text-shadow: -1px 0 #7E4E02, 0 1px #7E4E02, 1px 0 #7E4E02, 0 -1px #7E4E02
 }
 
 .header__container h1,

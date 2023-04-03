@@ -40,6 +40,10 @@ body {
   line-height: 1.7rem;
 }
 
+section {
+  display: grid ;
+}
+
 a {
   color: var(--color-white-variant);
   transition: var(--transition);
