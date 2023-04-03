@@ -52,7 +52,7 @@
     }
 
     .about__header {
-        padding-top: 3rem;
+        padding: 2rem;
         font-size: 3em;
     }
 
@@ -77,6 +77,11 @@
         height: auto;
         margin-bottom: 3rem;
         font-size: 1.5rem;
+    }
+
+    .about__header {
+        padding: 2rem;
+        font-size: 2em;
     }
     
 
