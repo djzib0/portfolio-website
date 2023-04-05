@@ -1,0 +1,81 @@
+.portfolio__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.portfolio__header {
+    font-size: 2.5rem;
+    margin: 0rem auto; 
+    padding: 3rem;
+}
+
+.project__container {
+    /* width: var(--container-width-sm); */
+    display: grid;
+    grid-template-rows: 5% 35% 35% 25%;
+    height: 75vh;
+    grid-template-areas: 
+    "header"
+    "image"
+    "desc"
+    "technologies";
+    margin: 0rem 2rem;
+    border: 1px solid var(--color-gold);
+}
+
+.project__title,
+.project__description,
+.project__technologies {
+        padding: 0 1rem;
+}
+
+.project__title {
+    grid-area: header;
+    border: 1px solid red;
+}
+
+.project__description {
+    grid-area: desc;
+    border: 1px solid white;
+    font-size: small;
+}
+
+.project__technologies {
+    grid-area: technologies;
+    border: 1px solid green;
+}
+
+.project__image {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    border: 1px solid pink;
+    object-fit: cover;
+}
+
+
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+
+@media screen and (min-width: 601px) {
+    .project__container {
+        /* max-width: 80%; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+        "header image"
+        "desc image"
+        "technologies image";
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    
+}
+
+  /* MEDIA QUERIES (BIG  DEVICES) */
+  
+  @media screen and (min-width: 992px) {
+    
+}

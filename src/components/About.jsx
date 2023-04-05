@@ -13,6 +13,7 @@ function About() {
           <br />
           <br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur amet earum cupiditate qui nihil quis. Provident doloribus reiciendis veritatis unde, nobis nam, quis beatae recusandae expedita, quod molestias neque ullam?
+          
           </h5>
           <img src={ PORTRAIT } className='about__image'/>
         </div>
