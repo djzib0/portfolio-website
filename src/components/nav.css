@@ -14,7 +14,7 @@
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
-    z-index: 10;
+    z-index: 1000;
 }
 
 .navbar__container a {

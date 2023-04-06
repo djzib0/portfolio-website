@@ -12,7 +12,8 @@
   --bg-img-light: url("./assets/images/y-so-serious-white.png");
   --bg-img-dark: url("./assets/images/y-so-serious.png");
 
-  --color-black: #000;
+  --color-black: rgb(0, 0, 0);
+  --color-black-rgb: 0, 0, 0;
   --color-white: #fff;
   --color-gold: #fca311;
   --color-gold-variant: #ffc655;
@@ -101,6 +102,15 @@ section, header {
 
 .weight-500 {
   font-weight: 500;
+}
+
+i, .svg {
+  transition: var(--transition);
+}
+
+i:hover,
+.svg:hover {
+  transform: scale(110%);
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) */

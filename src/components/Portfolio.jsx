@@ -4,6 +4,10 @@ import convertToIcon from '../utils/convertToIcon'
 import {nanoid} from "nanoid"
 import "./portfolio.css"
 
+import { GrGithub } from "react-icons/gr"
+import { TbWorldWww } from "react-icons/tb"
+
+
 
 function Portfolio() {
   const [allProjects, setAllProjects] = useState(projectsData)
@@ -13,8 +17,7 @@ function Portfolio() {
     let technologiesArr = []
     // create array of used technologies 
     for (let technology of item.technology) {
-      console.log(technology)
-      technologiesArr.push(<i key={nanoid()} className={convertToIcon(technology)}></i>)
+      technologiesArr.push(<i key={nanoid()} className={convertToIcon(technology)} title={technology}></i>)
     }
 
     return (
@@ -28,11 +31,15 @@ function Portfolio() {
             {item.description2}
           </div>
           <div className='project__technologies'>
-            {technologiesArr}
+            <div className='project__technologies-icons'>
+              {technologiesArr}
+            </div>
+            <div className='project__links'>
+              <GrGithub className='link-icon svg'/>
+              <TbWorldWww className='link-icon svg'/>
+            </div>
           </div>
-
-          <img src={item.img} className='project__image' alt="prject screenshot"  />
-
+          <img src={item.img} className='project__image' alt="prject screenshot" />
         </div>
       </div>
     )
