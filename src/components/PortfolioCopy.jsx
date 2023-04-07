@@ -5,15 +5,11 @@ import {nanoid} from "nanoid"
 import "./portfolio.css"
 
 // import Swiper core and required modules
-import { Navigation, Pagination, EffectFade } from 'swiper';
+import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-fade'
-
-
 
 
 // import icons
@@ -34,7 +30,8 @@ function Portfolio() {
     }
 
     return (
-      <SwiperSlide key={nanoid()} >
+      <div className='portfolio__container'>
+        <h1 className='portfolio__header'>My <span>Piotr</span>folio</h1>
         <div key={item.id} className='project__container'>
           <h5 className='project__title'>{item.name}</h5>
           <div className='project__description'>
@@ -53,28 +50,14 @@ function Portfolio() {
           </div>
           <img src={item.img} className='project__image' alt="prject screenshot" />
         </div>
-      </SwiperSlide>
+      </div>
     )
   })
 
   return (
-    <div id="portfolio" className='portfolio__container'>
-      <h1 className='portfolio__header'>My <span>Piotr</span>folio</h1>
-      <Swiper className='swiper__wrapper'
-          modules={[Pagination, Navigation, EffectFade]}
-          spaceBetween={5}
-          slidesPerView={1}
-          navigation={{ clickable: true}}
-          // effect={'fade'}
-          speed={800}
-          // pagination={{ clickable: false }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}>
-        {projectsArr}
-      </Swiper>
-    </div>
-
+    <section id="portfolio">
+      {projectsArr}
+    </section>
   )
 }
 
