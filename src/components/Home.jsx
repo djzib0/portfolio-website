@@ -1,11 +1,15 @@
 import React from 'react'
 import "./home.css"
+
 import PORTRAIT from "../assets/images/portrait.jpg"
 import { GrFacebook } from "react-icons/gr"
 import { GrLinkedin } from "react-icons/gr"
 import { GrGithub } from "react-icons/gr"
 
-function Home() {
+function Home(props) {
+
+  const { changeActiveSection } = props
+
   return (
       <header>
         <div className='container header__container'>
@@ -15,7 +19,9 @@ function Home() {
             <h4>Open minded for a new 
             <span> challenges </span>and prepared for the never ending 
             <span> learning </span>journey.</h4>
-            <a className='btn btn-primary' href="#contact">CONTACT ME</a>
+            <a className='btn btn-primary' href="#contact" 
+               onClick={() => changeActiveSection("contact")}>
+                CONTACT ME</a>
           </div>
 
           <div className='header__image'>

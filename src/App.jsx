@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
+import useSetActiveSection from './hooks/useSetActiveSection'
+
 // importing components
 import Navbar from './components/Navbar'
 import Home from './components/Home'
@@ -12,11 +14,16 @@ import Footer from './components/Footer'
 import Nav from './components/Nav'
 
 function App() {
+  // custom hook to control nav class to show active section,
+  // at Home component there is a contact button which also changes
+  // the Navbar style
+  const { activeSection, changeActiveSection } = useSetActiveSection("#")
+
   return (
     <div className="App">
       {/* <Navbar /> */}
-      <Nav />
-      <Home />
+      <Nav activeSection={activeSection} changeActiveSection={changeActiveSection}/>
+      <Home changeActiveSection={changeActiveSection} />
       <About />
       <Portfolio />
       <Contact />
