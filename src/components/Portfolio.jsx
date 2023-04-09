@@ -33,10 +33,14 @@ function Portfolio() {
       technologiesArr.push(<i key={nanoid()} className={convertToIcon(technology)} title={technology}></i>)
     }
 
+    console.log(item.name, item.name.length)
+
     return (
       <SwiperSlide key={nanoid()} >
         <div key={item.id} className='project__container'>
-          <h5 className='project__title'>{item.name}</h5>
+          {/* if title is longer than 14 chars, change style 
+          to fit title in container */}
+          <h5 className={`project__title ${item.name.length > 14 ? "small-title-text" : ""}`}>{item.name}</h5>
           <div className='project__description'>
             {item.description1}
             <br />
@@ -61,16 +65,13 @@ function Portfolio() {
     <div id="portfolio" className='portfolio__container'>
       <h1 className='portfolio__header'>My <span>Piotr</span>folio</h1>
       <Swiper className='swiper__wrapper'
-          modules={[Pagination, Navigation, EffectFade]}
+          modules={[Navigation]}
           spaceBetween={5}
           slidesPerView={1}
           navigation={{ clickable: true}}
-          // effect={'fade'}
-          speed={800}
-          // pagination={{ clickable: false }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}>
+          speed={500}
+          // scrollbar={{ draggable: true }}
+          >
         {projectsArr}
       </Swiper>
     </div>

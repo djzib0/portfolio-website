@@ -73,6 +73,10 @@
     font-weight: 700;
 }
 
+.small-title-text {
+    font-size: 1.5rem;
+}
+
 .project__description {
     grid-area: desc;
     font-size: small;
