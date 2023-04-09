@@ -1,7 +1,7 @@
 import React from 'react'
 import "./home.css"
 
-import PORTRAIT from "../assets/images/portrait.jpg"
+import PORTRAIT from "../assets/images/portraitok.jpg"
 import { GrFacebook } from "react-icons/gr"
 import { GrLinkedin } from "react-icons/gr"
 import { GrGithub } from "react-icons/gr"
