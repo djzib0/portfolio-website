@@ -5,7 +5,7 @@ const projects = [
     {
         id: 1,
         name: "Hangman",
-        technology: ["vanillaJS", "css", "html", "sqlite"],
+        technology: ["html", "css", "vanillaJS", "sqlite"],
         img: HANGMAN,
         github: "https://github.com/djzib0/js_hangman",
         website: "https://neon-blancmange-0514c6.netlify.app/",
@@ -15,7 +15,7 @@ const projects = [
     {
         id: 2,
         name: "Car rental booking system",
-        technology: ["vanillaJS", "css", "html", "sqlite"],
+        technology: ["html", "css", "python", "django", "sqlite"],
         img: CARBOOKING,
         github: "https://github.com/djzib0/js_hangman",
         description1: "I wanted to consolidate my beginner knowledge about Vanilla JS. Game has validation of entered letters and simple settings modal for changing category visibility.",
