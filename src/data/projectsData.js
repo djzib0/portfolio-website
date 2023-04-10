@@ -5,7 +5,7 @@ const projects = [
     {
         id: 1,
         name: "Hangman",
-        technology: ["html", "css", "vanillaJS", "sqlite"],
+        technology: ["html", "css", "vanillaJS"],
         img: HANGMAN,
         github: "https://github.com/djzib0/js_hangman",
         website: "https://neon-blancmange-0514c6.netlify.app/",

@@ -30,7 +30,7 @@ function Portfolio() {
     let technologiesArr = []
     // create array of used technologies 
     for (let technology of item.technology) {
-      technologiesArr.push(<i key={nanoid()} className={convertToIcon(technology)} title={technology}></i>)
+      technologiesArr.push(<i key={nanoid()} className={convertToIcon(technology) } title={technology}></i>)
     }
 
     console.log(item.name, item.name.length)
@@ -47,15 +47,22 @@ function Portfolio() {
             {item.description2}
           </div>
           <div className='project__technologies'>
-            <div className='project__technologies-icons'>
-              {technologiesArr}
+            <div className='project__technologies-container'>
+              <p id="powered-by-text">Powered by:</p>
+              <div className='project__technologies-icons'>
+                {technologiesArr}
+              </div>
             </div>
-            <div className='project__links'>
-              <GrGithub className='link-icon svg'/>
-              <TbWorldWww className='link-icon svg'/>
+            <div className='project__technologies-container'>
+            <p id="powered-by-text" className='white'>Links</p>
+              <div className='project__technologies-icons white'>
+                <GrGithub className='link-icon svg'/>
+                <TbWorldWww className='link-icon svg'/>
+              </div>
             </div>
+
           </div>
-          <img src={item.img} className='project__image' alt="prject screenshot" />
+          <img src={item.img} className='project__image' alt="project screenshot" />
         </div>
       </SwiperSlide>
     )
