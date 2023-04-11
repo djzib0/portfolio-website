@@ -5,6 +5,7 @@ import "./nav.css"
 import { FaHome } from 'react-icons/fa'
 import { BsPersonFillExclamation } from 'react-icons/bs'
 import { AiFillCode } from 'react-icons/ai'
+import { IoSchool } from 'react-icons/io5'
 import { IoIosMail } from 'react-icons/io'
 
 function Nav(props) {
@@ -24,6 +25,10 @@ function Nav(props) {
         <a href='#portfolio' onClick={() => changeActiveSection("portfolio")}
         className={props.activeSection === "portfolio" ? "test-active" : ""}>
           <AiFillCode />
+        </a>
+        <a href='#skills' onClick={() => changeActiveSection("skills")}
+        className={props.activeSection === "skills" ? "test-active" : ""}>
+          <IoSchool />
         </a>
         <a href='#contact' onClick={() => changeActiveSection("contact")}
         className={props.activeSection === "contact" ? "test-active" : ""}>

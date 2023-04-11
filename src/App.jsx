@@ -9,6 +9,7 @@ import Home from './components/Home'
 import ChallengesList from './components/ChallengesList'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Nav from './components/Nav'
@@ -26,6 +27,7 @@ function App() {
       <Home changeActiveSection={changeActiveSection} />
       <About />
       <Portfolio />
+      <Skills />
       <Contact />
       <Footer />
 

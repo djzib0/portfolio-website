@@ -1,0 +1,212 @@
+/* swiper styles */
+.swiper__wrapper {
+    max-width: 98%;
+}
+
+.swiper-button-next {
+    padding-left: 1rem;
+}
+
+.swiper-button-prev {
+    padding-right: 1rem;
+}
+
+.skills__container {
+    background-image: radial-gradient(transparent, rgb(229, 229, 229)), 
+    url("../assets/images/y-so-serious-white.png");
+    color: var(--color-black);
+    display: grid;
+    grid-template-rows: 20% 80%;
+    padding: 2rem;
+}
+
+.skills__header {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+.not-swipeable {
+    display: none;
+}
+
+.skills-items__container {
+    margin: 2rem auto;
+    display: grid;
+    height: fit-content;
+    color: var(--color-white);
+    background-image: var(--bg-img-dark);
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.skills-items__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-gold);
+    overflow: hidden;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+
+.skills-items__header h1 {
+    font-size: 2rem;
+}
+
+.skills__icon {
+    color: white;
+    background-color: var(--color-black);
+    padding: .5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.skill-item__container {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.skill-item__container p {
+    margin-top: .2rem;
+}
+
+.education-title__container {
+    display: flex;
+    align-items: center;
+}
+
+.education-title__container p {
+ margin-right: .5rem;
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+
+@media screen and (min-width: 601px) {
+    /* swiper styles */
+    .swiper__wrapper {
+        max-width: 1024px;
+    }
+
+    .swiper-button-next {
+        padding-left: 1.5rem;
+    }
+    
+    .swiper-button-prev {
+        padding-right: 1.5rem;
+    }
+
+    /* other */
+    .swipeable {
+        display: none;
+    }
+
+    .not-swipeable {
+        margin: 0 4rem;
+        display: flex;
+        gap: 5%;
+    }
+
+    .skills__container {
+        padding: 2rem;
+    }
+
+    .skills__header {
+        padding: 2rem;
+    }
+
+    .skills-items__container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        height: fit-content;
+        color: var(--color-white);
+        background-image: var(--bg-img-dark);
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+    }
+
+    .skills-content__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-items__header {
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1.2rem;
+        background-color: var(--color-gold);
+        overflow: hidden;
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+    }
+
+    .skills-items__header h1 {
+        font-size: 3rem;
+    }
+    
+    .skills__icon {
+        color: white;
+        background-color: var(--color-black);
+        padding: .5rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+    }
+}
+
+    /* MEDIA QUERIES (BIG  DEVICES) */
+      /* swiper styles */
+@media screen and (min-width: 992px) {    
+      .swiper__wrapper {
+        max-width: 1024px;
+    }
+
+    .swiper-button-next {
+        padding-left: 1.5rem;
+    }
+    
+    .swiper-button-prev {
+        padding-right: 1.5rem;
+    }
+
+    /* other */
+    .skills-items__container {
+        max-width: 1024px;
+    }
+
+    .skills__header {
+        padding-top: 3rem;
+        font-size: 3em;
+    }
+
+    .skills-items__header h1 {
+        font-size: 3rem;
+    }
+    
+    .skills__icon {
+        color: white;
+        background-color: var(--color-black);
+        padding: .5rem;
+        border-radius: 50%;
+    }
+    
+    .skill-item__container {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+    
+    .education-title__container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .education-title__container p {
+     margin-right: .5rem;
+    }
+}

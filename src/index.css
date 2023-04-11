@@ -117,6 +117,26 @@ i:hover,
   color:var(--color-white)
 }
 
+.small-text {
+  font-size: .8rem;
+}
+
+.gold-text {
+  color: var(--color-gold)
+}
+
+.icon-big {
+  font-size: 4rem;
+}
+
+.section__header {
+  color: var(--color-black);
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem;
+  line-height: 2rem;
+}
+
 /* MEDIA QUERIES (SMALL DEVICES) */
 
 @media screen and (max-width: 601px) {
@@ -128,7 +148,6 @@ i:hover,
 
   .section {
       margin-top: 6rem;
-
   }
 }
 
