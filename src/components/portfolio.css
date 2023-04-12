@@ -199,7 +199,8 @@
   @media screen and (min-width: 992px) {
           /* swiper styles */
     .swiper__wrapper {
-        max-width: 1100px;
+        max-width: 1200px;
+        margin-top: 2em;
     }
 
     .swiper-button-next {
@@ -213,10 +214,9 @@
     /* other */
 
     .project__container {
-        max-width: 1024px;
+        max-width: 940px;
         padding: 2rem;
-        display: grid;
-        height: 70vh;
+        height: 65vh;
         margin: 0 auto;
         padding: 0rem;
     }
