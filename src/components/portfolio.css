@@ -34,7 +34,7 @@
 .project__container {
     display: grid;
     grid-template-rows: 35% 10% 43% 12%;
-    height: 75vh;
+    height: 68vh;
     grid-template-areas: 
     "image"
     "header"
@@ -57,7 +57,6 @@
         color: black;
         z-index: 10;
 }
-
 
 .project__title {
     display: flex;
@@ -131,9 +130,6 @@
 .link-icon {
     margin-left: .2rem;
 }
-
-
-
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 
@@ -212,6 +208,9 @@
     }
 
     /* other */
+    .portfolio__header {
+        padding: 1rem;
+    }
 
     .project__container {
         max-width: 940px;

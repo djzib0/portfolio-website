@@ -5,7 +5,7 @@ const educationData = [
         schoolName: "Scrimba",
         yearStart: 2022,
         yearEnd: 2023,
-        file: "",
+        file: "link",
     },
     {
         name: "Python Developer",

@@ -23,8 +23,8 @@ export default function Skills() {
             <div key={nanoid()} className='skill-item__container'>
                 <h3>{schoolName}</h3>
                 <div className='education-title__container'>
-                <p className='gold-text'>{name}</p>
-                 {file ? <BsFillEyeFill /> : ""}
+                    <p className='gold-text'>{name}</p>
+                    {file ? <BsFillEyeFill className='icon-small' /> : ""}
                 </div>
                 <p className='small-text'>{type} {yearStart} - {yearEnd} </p>
             </div>
@@ -39,7 +39,7 @@ export default function Skills() {
 
             <Swiper className='swiper__wrapper swipeable'
                       modules={[Navigation]}
-                      spaceBetween={5}
+                      spaceBetween={50}
                       slidesPerView={1}
                       navigation={{ clickable: true}}
                       speed={500}>

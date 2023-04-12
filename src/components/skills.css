@@ -1,14 +1,17 @@
 /* swiper styles */
 .swiper__wrapper {
-    max-width: 98%;
+    max-width: 100%;
+    padding: 2rem;
 }
 
 .swiper-button-next {
     padding-left: 1rem;
+    color: var(--color-black) !important;
 }
 
 .swiper-button-prev {
     padding-right: 1rem;
+    color: var(--color-black) !important;
 }
 
 .skills__container {
@@ -16,8 +19,8 @@
     url("../assets/images/y-so-serious-white.png");
     color: var(--color-black);
     display: grid;
-    grid-template-rows: 20% 80%;
-    padding: 2rem;
+    grid-template-rows: 10% 80%;
+
 }
 
 .skills__header {
@@ -82,38 +85,26 @@
 }
 
 .education-title__container p {
- margin-right: .5rem;
+    padding-right: 2rem;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 
 @media screen and (min-width: 601px) {
-    /* swiper styles */
-    .swiper__wrapper {
-        max-width: 1024px;
-    }
-
-    .swiper-button-next {
-        padding-left: 1.5rem;
-    }
-    
-    .swiper-button-prev {
-        padding-right: 1.5rem;
-    }
-
     /* other */
     .swipeable {
         display: none;
     }
 
     .not-swipeable {
-        margin: 0 4rem;
+        margin: 0 2rem;
         display: flex;
-        gap: 5%;
+        gap: 2%;
     }
 
     .skills__container {
-        padding: 2rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .skills__header {
@@ -125,22 +116,12 @@
         display: flex;
         flex-direction: column;
         width: 48%;
-        height: fit-content;
-        color: var(--color-white);
-        background-image: var(--bg-img-dark);
-        border-top-right-radius: 2rem;
-        border-top-left-radius: 2rem;
-    }
-
-    .skills-content__container {
-        display: flex;
-        flex-direction: column;
     }
 
     .skills-items__header {
+        padding: .5rem;
         justify-content: flex-start;
         align-items: center;
-        padding: 1.2rem;
         background-color: var(--color-gold);
         overflow: hidden;
         border-top-right-radius: 1.5rem;
@@ -148,15 +129,11 @@
     }
 
     .skills-items__header h1 {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
     
     .skills__icon {
-        color: white;
-        background-color: var(--color-black);
-        padding: .5rem;
-        border-radius: 50%;
-        margin-right: 2rem;
+        transform: scale(80%);
     }
 }
 
@@ -176,17 +153,30 @@
     }
 
     /* other */
-    .skills-items__container {
+    .skills__container {
+        /* justify-content: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .not-swipeable {
         max-width: 1024px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .skills-items__container {
+        width: 50%;
     }
 
     .skills__header {
-        padding-top: 3rem;
+        padding-bottom: 3rem;
         font-size: 3em;
     }
 
     .skills-items__header h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     
     .skills__icon {
@@ -199,11 +189,6 @@
     .skill-item__container {
         padding: 1rem;
         font-size: 1.4rem;
-    }
-    
-    .education-title__container {
-        display: flex;
-        align-items: center;
     }
     
     .education-title__container p {
