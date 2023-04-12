@@ -33,8 +33,6 @@ function Portfolio() {
       technologiesArr.push(<i key={nanoid()} className={convertToIcon(technology) } title={technology}></i>)
     }
 
-    console.log(item.name, item.name.length)
-
     return (
       <SwiperSlide key={nanoid()} >
         <div key={item.id} className='project__container'>
@@ -73,11 +71,10 @@ function Portfolio() {
       <h1 className='portfolio__header'>My <span>Piotr</span>folio</h1>
       <Swiper className='swiper__wrapper'
           modules={[Navigation]}
-          spaceBetween={5}
+          spaceBetween={50}
           slidesPerView={1}
-          navigation={{ clickable: true}}
+          navigation={{ clickable: true }}
           speed={500}
-          // scrollbar={{ draggable: true }}
           >
         {projectsArr}
       </Swiper>

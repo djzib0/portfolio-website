@@ -1,11 +1,4 @@
-/* slider styles */
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--color-white) !important;
-    -webkit-text-stroke: 1px solid red;
-}
-
+/* swiper styles */
 .swiper-button-next {
     padding-left: 1rem;
 }

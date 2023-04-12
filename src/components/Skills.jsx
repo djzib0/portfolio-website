@@ -1,7 +1,10 @@
 import React from 'react'
 import "./skills.css"
 import educationData from '../data/educationData';
+import skillsData from '../data/skillsData';
 import { nanoid } from 'nanoid';
+
+import convertToIcon from '../utils/convertToIcon'
 
 import { IoSchool } from 'react-icons/io5'
 import { BsFillEyeFill } from 'react-icons/bs'
@@ -27,6 +30,17 @@ export default function Skills() {
                     {file ? <BsFillEyeFill className='icon-small' /> : ""}
                 </div>
                 <p className='small-text'>{type} {yearStart} - {yearEnd} </p>
+            </div>
+        )
+    })
+
+    const skillsArray = skillsData.map(item => {
+        const {name, displayName} = item
+
+        return (
+            <div key={nanoid()} className="technology-title__container">
+               <i className={`${convertToIcon(name)} icon-medium`} title={name} />
+               <h3>{displayName}</h3>
             </div>
         )
     })
@@ -58,7 +72,7 @@ export default function Skills() {
                         <h1>Skills</h1>
                     </div>
                     <div className='skills-content__container'>
-                        {educationArray}
+                        {skillsArray}
                     </div>
                 </SwiperSlide>
 
@@ -83,7 +97,7 @@ export default function Skills() {
                         <h1>Skills</h1>
                     </div>
                     <div className='skills-content__container'>
-                        {educationArray}
+                        {skillsArray}
                     </div>
 
                 </div>

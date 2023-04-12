@@ -6,12 +6,14 @@
 
 .swiper-button-next {
     padding-left: 1rem;
-    color: var(--color-black) !important;
+    color: var(--color-gold) !important;
+    -webkit-text-stroke: 1px var(--color-black) !important;
 }
 
 .swiper-button-prev {
     padding-right: 1rem;
-    color: var(--color-black) !important;
+    color: var(--color-gold) !important;
+    -webkit-text-stroke: 1px var(--color-black) !important;
 }
 
 .skills__container {
@@ -79,13 +81,22 @@
     margin-top: .2rem;
 }
 
-.education-title__container {
+.education-title__container,
+.technology-title__container {
     display: flex;
     align-items: center;
 }
 
 .education-title__container p {
     padding-right: 2rem;
+}
+
+.technology-title__container {
+    padding: .2rem;
+}
+
+.skills-content__container {
+    padding: 1rem;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
@@ -134,6 +145,12 @@
     
     .skills__icon {
         transform: scale(80%);
+    }
+
+    .technology-title__container {
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
     }
 }
 
