@@ -60,6 +60,7 @@ a:hover {
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .btn-primary {
@@ -69,12 +70,21 @@ a:hover {
   color: var(--color-gold);
   background-color: transparent;
   border: 1px solid var(--color-gold);
-  transition: var(--transition);
+
 }
 
 .btn-primary:hover {
   color: #000;
   background-color: var(--color-gold);
+}
+
+.btn-secondary {
+  background-color: var(--color-gold);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: var(--color-gold-variant);
 }
 
 
