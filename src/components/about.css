@@ -38,15 +38,13 @@
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 
 @media screen and (min-width: 601px) {
-    
     .about__container-description {
         display: grid;
         grid-template-columns: 48% 48%;
         justify-content: center;
         align-items: flex-start;
     }
-
-
+    
     .about__image {
         padding: 0rem;
     }

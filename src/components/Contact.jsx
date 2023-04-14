@@ -1,22 +1,39 @@
-import React from 'react'
+import React, { useRef} from 'react'
 import "./contact.css"
+
+import emailjs from 'emailjs-com'
 
 import { GrLinkedin } from "react-icons/gr"
 import { BsMessenger } from "react-icons/bs"
 
+
+
 function Contact() {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_36maypg', 'template_pgm2ijw', form.current, '5SyiQ0eeGjDgsWXzo')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <section id='contact'>
+      <h1 className='contact__header'>Contact <span> Me </span></h1>
       <div className='contact__container'>
-        <h1 className='contact__header'>Contact <span> Me </span></h1>
-
         <div className='contact__description'>
           <p>
             If you would like to contact me, please write me an email -
             <a href='mailto:piotrsabatura@gmail.com'><span> piotrsabatura@gmail.com </span></a>
           </p>
           <p>
-            Or catch me via other platforms
+            Or catch me on other platforms:
           </p>
           <div className="icons__container">
             <div className='icon__container'>
@@ -31,16 +48,19 @@ function Contact() {
                   <BsMessenger className=''/>
                 </a>
             </div>
-          </div>
-          
+          </div> 
         </div>
-        <p>Or just leave me a message via form</p>
-        <form action=''>
-          <input type='text' name='name' placeholder='Your Name' required/>
-          <input type="email" name="email" placeholder='Your Email' required />
-          <textarea name="message" id="" cols="30" rows="7" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-secondary'>Send Message</button>
-        </form>
+        
+        <div className='form__container'>
+          <p>Or just leave me a message via form</p>
+          <form ref={form} onSubmit={sendEmail}>
+            <input type='text' name='name' placeholder='Your Name' required/>
+            <input type="email" name="email" placeholder='Your Email' required />
+            <textarea name="message" id="" cols="30" rows="7" placeholder='Your Message' required></textarea>
+            <button type='submit' className='btn btn-secondary'>Send Message</button>
+          </form>
+        </div>
+        
       </div>
     </section>
   )
