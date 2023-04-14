@@ -18,6 +18,7 @@ function Contact() {
     emailjs.sendForm('service_36maypg', 'template_pgm2ijw', form.current, '5SyiQ0eeGjDgsWXzo')
       .then((result) => {
           console.log(result.text);
+          form.current.reset()
       }, (error) => {
           console.log(error.text);
       });
