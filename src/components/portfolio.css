@@ -1,4 +1,5 @@
 /* swiper styles */
+
 .swiper-button-next {
     padding-left: 1rem;
 }
@@ -33,7 +34,7 @@
     "header"
     "desc"
     "technologies";
-    margin: 0rem 2rem;
+    margin: 0rem .5rem;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: .5rem;
