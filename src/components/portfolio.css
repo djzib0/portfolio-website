@@ -73,7 +73,13 @@
 
 .project__description {
     grid-area: desc;
-    font-size: small;
+    font-size: .8rem;
+    padding: .5rem;
+}
+
+.project__description p {
+    margin-bottom: .5rem;
+    line-height: 1.3rem;
 }
 
 .project__technologies {
@@ -166,10 +172,16 @@
     }
 
     .project__description {
-        font-size: .8rem;
+        font-size: 1.2rem;
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
-        /* margin-top: 2rem; */
+        padding: .8rem;
+    }
+
+    .project__description p {
+        margin-bottom: .5rem;
+        line-height: 1.3rem;
     }
 
     .project__technologies-container {
@@ -213,9 +225,28 @@
         height: 65vh;
         margin: 0 auto;
         padding: 0rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 67% 13%;
+    }
+
+    .project__container {
+        min-width: 601px;
+        display: grid;
+        height: 65vh;
+        
+        grid-template-areas: 
+        "image header"
+        "image desc"
+        "image technologies";
+        margin: 0 1.5rem;
     }
     
     .project__description {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .project__description p {
+        margin-bottom: .8rem;
+        line-height: 1.6rem;
     }
 }

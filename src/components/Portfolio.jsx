@@ -13,13 +13,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade'
 
-
-
-
 // import icons
 import { GrGithub } from "react-icons/gr"
 import { TbWorldWww } from "react-icons/tb"
-
 
 
 function Portfolio() {
@@ -40,9 +36,10 @@ function Portfolio() {
           to fit title in container */}
           <h5 className={`project__title ${item.name.length > 14 ? "small-title-text" : ""}`}>{item.name}</h5>
           <div className='project__description'>
-            {item.description1}
-            <br />
-            {item.description2}
+            <p>{item.description1}</p>
+            <p>{item.description2}</p>
+            <p>{item.description3}</p>
+
           </div>
           <div className='project__technologies'>
             <div className='project__technologies-container'>
@@ -54,8 +51,8 @@ function Portfolio() {
             <div className='project__technologies-container'>
             <p id="powered-by-text" className='white'>Links</p>
               <div className='project__technologies-icons white'>
-                <GrGithub className='link-icon svg'/>
-                <TbWorldWww className='link-icon svg'/>
+                {item.github && <a href={item.github} target='_blank'><GrGithub className='link-icon svg'/></a>}
+                {item.website && <a href={item.website} target='_blank'><TbWorldWww className='link-icon svg'/></a>}
               </div>
             </div>
 
