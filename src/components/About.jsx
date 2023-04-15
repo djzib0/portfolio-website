@@ -20,10 +20,7 @@ function About() {
             Coding is not only writing lines of codes, it's like solving riddles, and the satisfaction from finding solution is the best prize I can imagine.
             </p>
             <p>
-            I'm looking  for an after-hours internship  or junior dev job because I want to develop my skills in front- and back-end.
-            </p>
-            <p>
-            I know how to work in team and I'm open for other people ideas.
+            I'm looking  for an after-hours internship  or junior dev job because I want to develop my skills in front-end as well as back-end.
             </p>
             <p>
             In my spare time I meet with my closest friends, play video games or take care of my parrots - Pablo, Kuba and Młody. I also like to take a walk, especially in nature where I can relax from noisy city.
