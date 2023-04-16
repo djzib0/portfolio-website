@@ -28,9 +28,9 @@ function Home(props) {
             <img src={PORTRAIT} alt="portrait picture" />
           </div>
           <div className="header__socials">
-            <a href='#'><GrFacebook /></a>
-            <a href='#'><GrLinkedin /></a>
-            <a href='#'><GrGithub /></a>
+            <a href='http://www.facebook.com/piotr.sabatura' target='_blank'><GrFacebook /></a>
+            <a href='https://www.linkedin.com/in/piotr-sabatura-6016ba8b/' target='_blank'><GrLinkedin /></a>
+            <a href='https://github.com/djzib0' target='_blank'><GrGithub /></a>
           </div>
         </div>
       </header>

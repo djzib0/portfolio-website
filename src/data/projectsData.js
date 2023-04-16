@@ -1,5 +1,6 @@
 import HANGMAN from "../assets/images/project-hangman.png"
-import CARBOOKING from "../assets/images/portrait2.jpg"
+import CARBOOKING from "../assets/images/project-car-booking.png"
+import PORTFOLIO from "../assets/images/project-portfolio-website.png"
 
 const projects = [
     {
@@ -23,6 +24,17 @@ const projects = [
         description1: "My graduation project created in Django.",
         description2: "Booking system where you can search for available car based on given parameters like fuel type, number of seats and more. Project contains implemented form input validation",
         description3: "I didn't focus on styling page but some simple styles were added.",
+    },
+    {
+        id: 3,
+        name: "Portfolio Website",
+        technology: ["html", "css", "vanillaJS", "react"],
+        img: PORTFOLIO,
+        github: "https://github.com/djzib0/portfolio-website",
+        website: "https://piotrfolio.eu",
+        description1: "The Website you are visiting right now.",
+        description2: "",
+        description3: "",
     },
 
 ]

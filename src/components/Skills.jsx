@@ -27,7 +27,7 @@ export default function Skills() {
                 <h3>{schoolName}</h3>
                 <div className='education-title__container'>
                     <p className='gold-text'>{name}</p>
-                    {file ? <BsFillEyeFill className='icon-small' /> : ""}
+                    {file && <a className='icon-small' href={file}><BsFillEyeFill className='icon-small' /></a>}
                 </div>
                 <p className='small-text'>{type} {yearStart} - {yearEnd} </p>
             </div>

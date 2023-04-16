@@ -39,6 +39,7 @@
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
+    /* border: 2px solid var(--color-gold); */
     background-image: var(--bg-img-light);
     overflow: hidden;
     box-shadow:  1px 1px 10px var(--color-black);
@@ -233,7 +234,6 @@
         min-width: 601px;
         display: grid;
         height: 65vh;
-        
         grid-template-areas: 
         "image header"
         "image desc"

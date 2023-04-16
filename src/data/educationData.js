@@ -1,3 +1,5 @@
+import SCRIMBACERT from "../assets/certificates/scrimbacertificate.pdf"
+
 const educationData = [
     {
         name: "Frontend Developer Career Path",
@@ -5,7 +7,7 @@ const educationData = [
         schoolName: "Scrimba",
         yearStart: 2022,
         yearEnd: 2023,
-        file: "link",
+        file: SCRIMBACERT,
     },
     {
         name: "Python Developer",

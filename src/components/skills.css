@@ -16,6 +16,8 @@
     -webkit-text-stroke: 1px var(--color-black) !important;
 }
 
+/* other */
+
 .skills__container {
     background-image: radial-gradient(transparent, rgb(229, 229, 229)), 
     url("../assets/images/y-so-serious-white.png");
@@ -89,6 +91,11 @@
 
 .education-title__container p {
     padding-right: 2rem;
+}
+
+.education-title__container a:hover {
+    color: var(--color-gold-variant);
+    transform: scale(120%);
 }
 
 .technology-title__container {

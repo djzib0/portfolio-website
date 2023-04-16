@@ -63,7 +63,6 @@ span.border {
     position: relative;
     top: 10px;
     z-index: 0;
-    /* transform: scale(110%); */
     width: 200px;
     height: 200px;
     transition: var(--transition);
@@ -89,6 +88,10 @@ span.border {
     padding: .5rem;
     width: 50px;
 }
+
+.header__socials a:hover {
+    color: var(--color-gold-variant);
+  }
 
 .header__socials a:hover {
     transform: scale(135%) translateX(2%);
