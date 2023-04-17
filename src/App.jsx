@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import useSetActiveSection from './hooks/useSetActiveSection'
@@ -17,12 +17,37 @@ function App() {
   // custom hook to control nav class to show active section,
   // at Home component there is a contact button which also changes
   // the Navbar style
+
   const { activeSection, changeActiveSection } = useSetActiveSection("#")
+
+  // check if the window is scrolled to the bottom
+  // if yes, hide nav menu.
+  const [isBottom, setIsBottom] = useState(false)
+
+  function checkScrollIsBottom() {
+      const scrollHeight = document.documentElement.scrollHeight
+      const scrollY = window.scrollY
+      const clientHeight = document.documentElement.clientHeight
+      if (scrollHeight - scrollY - clientHeight <= 0) {
+        setIsBottom(true)
+      } else {
+        setIsBottom(false)
+      }
+  }
+
+  console.log(isBottom, "isBottom")
+
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollIsBottom)
+    return () => window.removeEventListener("scroll", checkScrollIsBottom)
+  })
+
 
   return (
     <div className="App">
       {/* <Navbar /> */}
-      <Nav activeSection={activeSection} changeActiveSection={changeActiveSection}/>
+      <Nav activeSection={activeSection} changeActiveSection={changeActiveSection} isBottom={isBottom} />
       <Home changeActiveSection={changeActiveSection} />
       <About />
       <Portfolio />

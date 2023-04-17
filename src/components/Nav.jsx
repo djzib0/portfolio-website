@@ -10,10 +10,12 @@ import { IoIosMail } from 'react-icons/io'
 
 function Nav(props) {
 
-  const {changeActiveSection} = props
+  const {changeActiveSection, isBottom} = props
+
+  console.log(isBottom)
 
   return (
-    <nav className='navbar__container'>
+    <nav className={`navbar__container ${isBottom ? "hidden" : ""}`}>
         <a href='#' onClick={() => changeActiveSection("#")}
         className={props.activeSection === "#" ? "test-active" : ""}>
           <FaHome />

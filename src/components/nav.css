@@ -15,6 +15,7 @@
     backdrop-filter: blur(1px);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
     z-index: 1000;
+    transition: var(--transition);
 }
 
 .navbar__container a {
@@ -36,4 +37,11 @@ a.test-active {
     background-color: var(--color-gold);
     border: .5px solid var(--color-black);
     color: var(--color-black)
+}
+
+@media screen and (max-width: 601px) {
+    .hidden {
+        opacity: 0%;
+        bottom: -50px;
+    }
 }
