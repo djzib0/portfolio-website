@@ -25,7 +25,5 @@ export default function convertToIcon(name) {
     else if (name === "sqlite") {
         return ("devicon-sqlite-plain")
     }
-    
-
 }
 

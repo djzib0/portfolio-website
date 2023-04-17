@@ -2,7 +2,7 @@ import React from 'react'
 import "./about.css"
 import calculateAge from '../utils/calculateAge.js'
 
-import PORTRAIT from "../assets/images/portrait2.jpg"
+import PORTRAIT from "../assets/images/portrait2.png"
 
 function About() {
   return (
@@ -26,9 +26,10 @@ function About() {
             In my spare time I meet with my closest friends, play video games or take care of my parrots - Pablo, Kuba and Młody. I also like to take a walk, especially in nature where I can relax from noisy city.
             </p>
           </div>
-          <div className='image__container'>
-            <img src={ PORTRAIT } className='about__image'/>
-          </div>
+          <figure className='image__container'>
+            <img src={ PORTRAIT } className='about__image' alt="picture of me with some wooden figure of devil with rocks behind us" />
+            <figcaption>From left - me, wooden devil.</figcaption>
+          </figure>
         </div>
       </div>
 
