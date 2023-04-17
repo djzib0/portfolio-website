@@ -35,13 +35,10 @@ function App() {
       }
   }
 
-  console.log(isBottom, "isBottom")
-
-
   useEffect(() => {
     window.addEventListener("scroll", checkScrollIsBottom)
     return () => window.removeEventListener("scroll", checkScrollIsBottom)
-  })
+  }, [isBottom])
 
 
   return (
