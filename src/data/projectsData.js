@@ -1,8 +1,21 @@
+import CRM from "../assets/images/project-crm-app.png"
 import HANGMAN from "../assets/images/project-hangman.png"
 import CARBOOKING from "../assets/images/project-car-booking.png"
 import PORTFOLIO from "../assets/images/project-portfolio-website.png"
 
+
 const projects = [
+    {
+        id: 0,
+        name: "CRM app    (WIP)",
+        technology: ["html", "css", "react"],
+        img: CRM,
+        github: "https://github.com/djzib0/crm_app",
+        website: "https://crm-app-ashen.vercel.app/",
+        description1: "I'm currently working on the Customer Relationship Management app. ",
+        description2: "Application is based on React and a Firebase realtime database, and soon the Redux state control will be implemented",
+        description3: "It's still in proudction but I add a new functionalities and adjustments every few days."
+    },
     {
         id: 1,
         name: "Hangman",
