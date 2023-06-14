@@ -8,13 +8,13 @@ const projects = [
     {
         id: 0,
         name: "CRM app    (WIP)",
-        technology: ["html", "css", "react"],
+        technology: ["html", "css", "vanillaJS", "react"],
         img: CRM,
         github: "https://github.com/djzib0/crm_app",
         website: "https://crm-app-ashen.vercel.app/",
         description1: "I'm currently working on the Customer Relationship Management app. ",
-        description2: "Application is based on React and a Firebase realtime database, and soon the Redux state control will be implemented",
-        description3: "It's still in proudction but I add a new functionalities and adjustments every few days."
+        description2: "Application is based on React and a Firebase realtime database, and soon the Redux state control will be implemented.",
+        description3: "It's still in production stage but I add a new functionalities and adjustments every few days."
     },
     {
         id: 1,
