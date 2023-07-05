@@ -32,7 +32,7 @@ const projects = [
         name: "Car rental booking system",
         technology: ["html", "css", "python", "django", "sqlite"],
         img: CARBOOKING,
-        github: "https://github.com/djzib0/js_hangman",
+        github: "https://github.com/djzib0/car_rental_app",
         website: "",
         description1: "My graduation project created in Django.",
         description2: "Booking system where you can search for available car based on given parameters like fuel type, number of seats and more. Project contains implemented form input validation",
